@@ -9,17 +9,27 @@
     <style>
         body{
             height: 100vh;
-            background-image: url(imagens/wallpaper002.jpg);
+            background: lightslategray url('imagens/wallpaper002.jpg') center no-repeat fixed;
             background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-color: lightslategray;
+            /*
+                Shorthand background
+
+                color > image >  position > repeat > [size] > attachment
+
+                Exemplo: 
+                background: lightslategray url center no repeat cover fixed;
+
+                o cover não funciona na shorthand, então não utilize.
+
+                background: lightslategray url('imagens/wallpaper002.jpg') center no-repeat fixed;
+                background-size: cover;
+            */
         }
 
         main{
             border: 1px solid black;
             height: auto;
-            width: 400px;
+            max-width: 400px;
             background-color: white;
             margin: auto;
             padding: 5px;
