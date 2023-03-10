@@ -7,17 +7,27 @@
     <title>Tabelas em HTML 2.0</title>
     <style>
 
+
         table{
             border-collapse: collapse;
             border: 1px solid black;
+            width: 400px;
+        }
+
+        caption{
+            font-size: 1.3em;
+            background-color: gray;
+            color: white;
+            padding: 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
         }
 
         th{
             border: 1px solid black;
-            background-color: gray;
+            background-color: rgb(55, 53, 53);
             color: white;
             font-family: Arial, Helvetica, sans-serif;
-            width: 400px;
             padding: 8px;
         }
 
@@ -30,6 +40,7 @@
         
             text-align: right;
         }
+
     </style>
 </head>
 <body>
@@ -45,12 +56,12 @@
             TFOOT
                 TR, TD, TH
     -->
-
     <table>
+        <caption>População dos Estados Brasileiros</caption>
         <thead>
             <tr>
-                <th>Unidade Federativa</th>
-                <th>População</th>
+                <th scope="col">Unidade Federativa</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
 
@@ -194,7 +205,7 @@
 
         <tfoot>
             <tr>
-                <th>Total Populacional</th>
+                <th scope="row">Total Populacional</th>
                 <th class="num"><strong>218.005.941</strong></th>
             </tr>
         </tfoot>
