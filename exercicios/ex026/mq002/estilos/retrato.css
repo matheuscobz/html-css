@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/*Aparelho em tela retrato*/
+
+body{
+    background-image: url(../imagens/cev-portrait.jpg);
+    background-position: contain;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
