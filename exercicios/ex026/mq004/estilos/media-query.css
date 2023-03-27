@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/*Todas as demais mídias*/
+
+/* Typical Devices Breakpoints
+==================================
+Celulares: 320px — 480px.
+Tablet, iPads: 481px — 768px.
+Telas pequenas, laptops: 769px — 1024px.
+Desktop: 1025px — 1200px.
+Grandes telas: acima de 1200px
+*/
+@media print{
+    body{
+        background-image: url(../imagens/back-print.jpg);
+    }
+
+    #phone {display: none;}
+    #tablet{display: none;}
+    #print{display:block;}
+    #pc{display:none;}
+    #tv{display: none;}
+
+    main{
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration:overline
+    }
+
+    main::after{
+        content: 'Essa impressão foi feita através do site matheusescobozo.github.io/html-css/ex026/mq004/index.html';
+    }
+}
+
+
+@media screen and  (min-width: 768px) and (max-width: 991px){
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    #phone {display: none;}
+    #tablet{display: block;}
+    #print{display:none;}
+    #pc{display: none;}
+    #tv{display: none;}
+}
+
+@media screen and (min-width:992px) and (max-width: 1200px){
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    #phone {display: none;}
+    #tablet{display: none;}
+    #print{display:none;}
+    #pc{display:block;}
+    #tv{display: none;}
+}
+
+@media screen and (min-width: 1200px){
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    #phone {display: none;}
+    #tablet{display: none;}
+    #print{display:none;}
+    #pc{display:none;}
+    #tv{display: block;}
+}
