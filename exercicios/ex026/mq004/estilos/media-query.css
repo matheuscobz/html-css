@@ -4,10 +4,9 @@
 
 /* Typical Devices Breakpoints
 ==================================
-Celulares: 320px — 480px.
-Tablet, iPads: 481px — 768px.
-Telas pequenas, laptops: 769px — 1024px.
-Desktop: 1025px — 1200px.
+Celulares:600px — 768px
+Tablet, iPads: 768px — 992px
+Desktop: 992px — 1200px
 Grandes telas: acima de 1200px
 */
 @media print{
